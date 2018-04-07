@@ -1,0 +1,10 @@
+<view>
+  <text>这里是自定义组件</text>
+  <slot name="top"></slot>
+  <text>{{titleData}}</text>
+  <text data-index="name1" bindtap='hasC' class='my-class'>分割线===========</text>
+  
+  <text>{{propData}}</text>
+  <text data-index="name2" bindtap='hasC' class='my-class'>分割线===========</text>
+  <slot name="bottom"></slot>
+</view>

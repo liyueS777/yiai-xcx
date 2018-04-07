@@ -1,0 +1,17 @@
+<!--pages/brothers/brothers.wxml-->
+<text>pages/brothers/brothers.wxml</text>
+<view>
+  <component-brotherA>
+    <view>
+      <text>兄弟1</text>
+    </view>
+  </component-brotherA>
+</view>
+<view>
+  <component-brotherB>
+    <view>
+      <text>兄弟2</text>
+    </view>
+  </component-brotherB>
+
+</view>

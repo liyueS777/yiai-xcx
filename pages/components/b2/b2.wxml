@@ -1,0 +1,4 @@
+<view>
+  <text>这里是b2</text>
+  <slot></slot>
+</view>

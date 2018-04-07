@@ -1,0 +1,7 @@
+{
+      "navigationBarTitleText": "兄弟组件通讯11111111111111111111111111111111111",
+      "usingComponents": {
+        "component-brotherA": "../components/b1/b1",
+        "component-brotherB": "../components/b2/b2"
+      }
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/activity/activity",
+    "pages/brothers/brothers",
+    "pages/input/input",
+    "pages/area/area",
+    "pages/camerca/camerca",
+    "pages/picker/picker",
+    "pages/tabbar/tabbar",
+    "pages/tab/tab"
+  ],
+  "window": {
+    "onReachBottomDistance":"10rpx",
+    "backgroundTextStyle": "white",
+    "navigationBarBackgroundColor": "#c12",
+    "navigationBarTitleText": "shasiN",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "navigationStyle":"default",
+    "backgroundColor":"#c23",
+    "backgroundTextStyle":"dark",
+    "backgroundColorTop":"#e23"
+  },
+  "tabBar": {
+    "color":"#e44",
+    "selectedColor":"#ccc",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "详情页"
+      }
+    ]
+  }
+}

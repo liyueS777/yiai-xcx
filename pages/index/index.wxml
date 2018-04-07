@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+<view>
+  <navigator url="/pages/brothers/brothers">去兄弟组件走一走</navigator>
+  <navigator url="/pages/input/input">input</navigator>
+  <navigator url="/pages/area/area">textarea</navigator>
+  <navigator url="/pages/camerca/camerca">camerca</navigator>
+</view>
+  <view class="usermotto">
+    <text class="user-motto" bindtap="hw">{{motto}}</text>
+    <navigator url="/pages/activity/activity">
+      <image src="/assets/imgs/i.png"></image>
+    </navigator>
+    <navigator url="/pages/detail/detail" open-type='switchTab'>tab switch</navigator>
+    <view wx:for="{{arrIndex}}" wx:for-item="list" wx:for-index="index1" wx:key="{{index1}}">
+      <text wx:if="{{list.name==666}}">{{list.name + '=A=' + list.age + index1}}</text>
+      <text wx:elif="{{list.name==777}}">{{'哟呵，还有~！'}}</text>
+      <text wx:else>没有啦</text>
+    </view>
+  </view>
+
+  <switch>9090</switch>
+  <template name="V1">
+    <view>{{haha}}</view>
+    <button bindtap="changeB" data-value="123">haha点我</button>
+  </template>
+  <block>
+    <template is="V1" data="{{haha:666}}"/>
+  </block>
+  <component-header my-class="bg" propData="888" bind:onChildToFather="toFather">
+    <button slot="top">top</button>
+    <button slot="bottom">bottom</button>
+  </component-header>
+</view>

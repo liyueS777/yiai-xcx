@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+<view hover-class='details-view' hover-stay-time="{{100}}">323dsadsadasdasd2</view>
+<button bindtap="detailClick">我想点你,但是 函数不在引入的主页main厚葬</button>
+<view>{{detail}}</view>
+<view>-==================swiper=====================</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  circular="{{true}}"
+  previous-margin="30rpx"
+  next-margin="30rpx"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <!-- <swiper-item data-sign="{{index}}" bindtap="nv">
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item> -->
+    <navigator url="/pages/activity/activity">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+<!-- <button bindtap="changeIndicatorDots"> indicator-dots </button> -->
+<view>
+  <text bindtap='callTel' data-tel="{{18820146660}}">电话call：18820146660</text>
+  
+</view>
+<view>
+  <text bindtap='scan'>扫一扫：</text>
+</view>
+<view>
+  <navigator url="/pages/picker/picker">picker</navigator>
+</view>
+<view>
+  <navigator url="/pages/tabbar/tabbar">picker</navigator>
+</view>
+<view>
+  <navigator url="/pages/tab/tab">tab</navigator>
+</view>

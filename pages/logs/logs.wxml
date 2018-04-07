@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <navigator url="/pages/index/index">go</navigator>
+    <navigator url="/pages/brothers/brothers">去兄弟组件走一走</navigator>
+
+</view>
